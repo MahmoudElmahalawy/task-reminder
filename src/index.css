@@ -73,8 +73,19 @@ body {
 }
 
 .delete-icon {
+  margin: 1.5rem 0.25rem 0 0;
+  min-width: 20px;
   color: #c82323;
   cursor: pointer;
+}
+
+.delete-icon:hover {
+  transform: scale(1.5);
+  background-color: rgba(200, 35, 35, 0.5);
+  border: 1px solid rgba(200, 35, 35, 0.5);
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .task.reminder {
@@ -126,6 +137,23 @@ body {
 .form-control-check input {
   flex: 2;
   height: 20px;
+}
+
+.form-error-empty {
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: 300px;
+  height: 100px; */
+  background-color: rgba(200, 35, 35, 0.7);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px dashed #c82323;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 footer {
